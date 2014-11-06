@@ -14,7 +14,7 @@ class LogStash::Inputs::Rackspace < LogStash::Inputs::Base
   config :api_key, :validate => :string, :required => true
    
   # Rackspace region
-  # ord, dfw, lon, syd, etc
+  # `ord, dfw, lon, syd,` etc
   config :region, :validate => :string, :default => 'dfw'
 
   # Rackspace Queue Name
