@@ -5,7 +5,6 @@ require "logstash/namespace"
 class LogStash::Inputs::Rackspace < LogStash::Inputs::Base
 
   config_name "rackspace"
-  milestone 1
 
   # Rackspace Cloud Username
   config :username, :validate => :string, :required => true
