@@ -82,8 +82,8 @@ class LogStash::Inputs::Rackspace < LogStash::Inputs::Base
   end # def run
 
   public
-  def teardown
+  def close
     @service = nil
-  end # def teardown
+  end # def close
 
 end # class LogStash::Inputs::Rackspace
