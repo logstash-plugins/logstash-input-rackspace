@@ -20,7 +20,7 @@ include::{include_path}/plugin_header.asciidoc[]
 
 ==== Description
 
-
+Receives events from a Rackspace Cloud Queue service.
 
 [id="plugins-{type}s-{plugin}-options"]
 ==== Rackspace Input Configuration Options

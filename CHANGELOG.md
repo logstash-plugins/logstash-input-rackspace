@@ -1,3 +1,9 @@
+# 3.0.2
+ - Docs: Add plugin description
+ 
+# 3.0.1
+ - Docs: Bump patch level for the doc build
+
 # 3.0.0
   - Breaking: depend on logstash-core-plugin-api between 1.60 and 2.99
 
