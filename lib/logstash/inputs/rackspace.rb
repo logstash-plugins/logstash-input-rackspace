@@ -10,7 +10,7 @@ class LogStash::Inputs::Rackspace < LogStash::Inputs::Base
   config :username, :validate => :string, :required => true
   
   # Rackspace Cloud API Key
-  config :api_key, :validate => :string, :required => true
+  config :api_key, :validate => :password, :required => true
    
   # Rackspace region
   # `ord, dfw, lon, syd,` etc
@@ -32,7 +32,7 @@ class LogStash::Inputs::Rackspace < LogStash::Inputs::Base
     require "fog"
     @service = Fog::Rackspace::Queues.new(
       :rackspace_username  => @username,   # Your Rackspace Username
-      :rackspace_api_key   => @api_key,         # Your Rackspace API key
+      :rackspace_api_key   => @api_key.value,         # Your Rackspace API key
       :rackspace_region    => @region.to_sym,                  # Your desired region
       :connection_options  => {}                     # Optional connection options
     )
